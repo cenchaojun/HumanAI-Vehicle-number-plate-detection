@@ -14,7 +14,7 @@ PYTHON_VERSION = sys.version_info[0]
 OS_VERSION = os.name
 import pandas as pd
 
-class PanOCR():
+class CarOCR():
 	''' Finds and determines if given image contains required text and where it is. '''
 
 	def init_vars(self):
@@ -172,11 +172,11 @@ class PanOCR():
 		#----------------------------------------------------------------#
 
 	def __init__(self):
-		''' Run PanOCR '''
+		''' Run CarOCR '''
 		self.initialize()
 
 if __name__ == "__main__":
-		extracter = PanOCR()
+		extracter = CarOCR()
 		tim = time.time()
 		
 		data=[]
